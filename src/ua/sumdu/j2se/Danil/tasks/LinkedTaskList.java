@@ -3,6 +3,9 @@ package ua.sumdu.j2se.Danil.tasks;
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+import java.util.Objects;
+
+import static java.util.Objects.isNull;
 
 /**
  * Created by User on 23.02.2016.
@@ -54,7 +57,7 @@ public class LinkedTaskList extends TaskList{
     public void add(Task task) {
         if(task == null)
             throw new NullPointerException("Добавление элемента null в список");
-        if(root == null){
+        if(isNull(root)){
             root = new Node();
             root.data = task;
             last = root;
