@@ -89,35 +89,7 @@ public class ArrayTaskList extends TaskList {
         return array[index];
     }
 
-    public ArrayTaskList incoming(int from, int to){
-        /*
-        if(from < 0 )
-            throw new IllegalArgumentException("Отрецательное время начала промежутка");
-        if(to < 0 )
-            throw new IllegalArgumentException("Отрецательное время начала конца промежутка");
-        ArrayTaskList returnList = new ArrayTaskList();
-        Task[] arrayTMP = new Task[lastIndex];
-        int j = 0;
-        for(int i = 0; i < lastIndex; i++){
-            if(array[i].nextTimeAfter(from) != -1
-            && array[i].nextTimeAfter(from) < to - from){
-                arrayTMP[j] = array[i];
-                j++;
-            }
 
-        }
-        if(arrayTMP.length != 0){
-            for(int i = 0 ; i <j; i++)
-            {
-                returnList.add(arrayTMP[i]);
-            }
-            return returnList;
-        }
-
-        return returnList;
-        */
-        return  null;
-    }
 
     @Override
     public Iterator<Task> iterator() {

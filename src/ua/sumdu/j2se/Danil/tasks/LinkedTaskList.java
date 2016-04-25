@@ -114,27 +114,7 @@ public class LinkedTaskList extends TaskList{
 
     }
 
-    @Override
-    public LinkedTaskList incoming(int from, int to) {
-        if(from < 0 )
-            throw new IllegalArgumentException("Отрецательное время начала промежутка");
-        if(to < 0 )
-            throw new IllegalArgumentException("Отрецательное время начала конца промежутка");
-        LinkedTaskList returnList = new LinkedTaskList();
-        Node tmp = root;
-        while (tmp != null){
-            if(tmp.data.nextTimeAfter(from)!= -1 && tmp.data.nextTimeAfter(from) < to - from){
-                returnList.add(tmp.data);
 
-            }
-            tmp = tmp.next;
-        }
-        if(returnList == null)
-            throw new NullPointerException("Добавление элемента null в список");
-
-        return returnList;
-
-    }
     public Iterator<Task> iterator() {
         return new LinkedIterator();
     }
