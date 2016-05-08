@@ -3,7 +3,6 @@ package ua.sumdu.j2se.Danil.tasks;
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import java.util.Objects;
 
 import static java.util.Objects.isNull;
 
