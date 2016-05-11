@@ -1,9 +1,10 @@
 package ua.sumdu.j2se.Danil.tasks;
 
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Task implements Cloneable {
+public class Task implements Cloneable, Serializable  {
     /*
     public static void main(String[] args) throws Exception {
         Task a = new Task("пробежка",26);

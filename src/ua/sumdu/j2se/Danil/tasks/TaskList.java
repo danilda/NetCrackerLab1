@@ -1,12 +1,13 @@
 package ua.sumdu.j2se.Danil.tasks;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Iterator;
 
 /**
  * Created by User on 23.02.2016.
  */
-public abstract class TaskList implements Cloneable {
+public abstract class TaskList implements Cloneable, Serializable{
     abstract public void add(Task task);
     abstract public boolean remove(Task task);
     abstract public int size();
